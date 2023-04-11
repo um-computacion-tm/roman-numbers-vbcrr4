@@ -1,5 +1,5 @@
 
-def roman_to_decimal(romano):
+def decimal_to_roman(romano):
     lts_m=["","M"] #genera lista mil
     lts_c=["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"]#lista para centenas 
     lts_d=["","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"]#lista para decimos
