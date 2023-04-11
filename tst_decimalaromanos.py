@@ -1,144 +1,144 @@
 import unittest
-from roman_to_decimal import roman_to_decimal
+from decimal_a_romanos import decimal_to_roman
 
 class TestDecimalToRoman(unittest.TestCase):
 
     def test_uno(self):
-        resultado = roman_to_decimal(1)
+        resultado = decimal_to_roman(1)
         # verificacion
         self.assertEqual(resultado, 'I')
 
     def test_diez(self):
-        resultado = roman_to_decimal(10)
+        resultado = decimal_to_roman(10)
         self.assertEqual(resultado, 'X')
 
     def test_cinco(self):
-        resultado = roman_to_decimal(5)
+        resultado = decimal_to_roman(5)
         self.assertEqual(resultado, 'V')
 
     def test_dos(self):
-        resultado = roman_to_decimal(2)
+        resultado = decimal_to_roman(2)
         self.assertEqual(resultado, 'II')
 
     def test_tres(self):
-        resultado = roman_to_decimal(3)
+        resultado = decimal_to_roman(3)
         self.assertEqual(resultado, 'III')
 
     def test_cien(self):
-        resultado = roman_to_decimal(100)
+        resultado = decimal_to_roman(100)
         self.assertEqual(resultado, 'C')
 
     def test_ciento_uno(self):
-        resultado = roman_to_decimal(101)
+        resultado = decimal_to_roman(101)
         self.assertEqual(resultado, 'CI')
 
     def test_ciento_tres(self):
-        resultado = roman_to_decimal(103)
+        resultado = decimal_to_roman(103)
         self.assertEqual(resultado, 'CIII')
 
     def test_ciento_cinco(self):
-        resultado = roman_to_decimal(105)
+        resultado = decimal_to_roman(105)
         self.assertEqual(resultado, 'CV')
 
     def test_ciento_diez(self):
-        resultado = roman_to_decimal(110)
+        resultado = decimal_to_roman(110)
         self.assertEqual(resultado, 'CX')
 
     def test_docientos_tres(self):
-        resultado = roman_to_decimal(203)
+        resultado = decimal_to_roman(203)
         self.assertEqual(resultado, 'CCIII')
 
     def test_docientos_veinte(self):
-        resultado= roman_to_decimal(220)
+        resultado= decimal_to_roman(220)
         self.assertEqual(resultado,"CCXX")
 
     def test_docientos_veintiocho(self):
-        resultado= roman_to_decimal(228)
+        resultado= decimal_to_roman(228)
         self.assertEqual(resultado,"CCXXVIII") 
     
     def test_docientos_sesenta(self):
-        resultado= roman_to_decimal(260 )
+        resultado= decimal_to_roman(260 )
         self.assertEqual(resultado,"CCLX") 
 
     def test_docientos_cincuenta(self):
-        resultado= roman_to_decimal(250)
+        resultado= decimal_to_roman(250)
         self.assertEqual(resultado,"CCL") 
 
     def test_docientos_sesenta_y_seis(self):
-        resultado= roman_to_decimal(266)
+        resultado= decimal_to_roman(266)
         self.assertEqual(resultado,"CCLXVI") 
 
     def test_docientos_ochenta_y_nueve(self):
-        resultado= roman_to_decimal(289)
+        resultado= decimal_to_roman(289)
         self.assertEqual(resultado,"CCLXXXIX") 
 
     def test_docientos_veintiocho(self):
-        resultado= roman_to_decimal(228)
+        resultado= decimal_to_roman(228)
         self.assertEqual(resultado,"CCXXVIII") 
 
     def test_docientos_noventa_y_cinco(self):
-        resultado= roman_to_decimal(295)
+        resultado= decimal_to_roman(295)
         self.assertEqual(resultado,"CCXCV") 
 
     def test_trecientos_uno(self):
-        resultado= roman_to_decimal(301)
+        resultado= decimal_to_roman(301)
         self.assertEqual(resultado,"CCCI") 
 
     def test_trecientos_quince(self):
-        resultado= roman_to_decimal(315)
+        resultado= decimal_to_roman(315)
         self.assertEqual(resultado,"CCCXV") 
 
     def test_seicientos_cinco(self):
-        resultado= roman_to_decimal(605)
+        resultado= decimal_to_roman(605)
         self.assertEqual(resultado,"DCV") 
 
 
     def test_setecientos_veinte(self):
-        resultado= roman_to_decimal(720)
+        resultado= decimal_to_roman(720)
         self.assertEqual(resultado,"DCCXX") 
 
     def test_cuatrocientos_seis(self):
-        resultado= roman_to_decimal(406)
+        resultado= decimal_to_roman(406)
         self.assertEqual(resultado,"CDVI") 
 
     def test_novecientos_veintitrés(self):
-        resultado= roman_to_decimal(923)
+        resultado= decimal_to_roman(923)
         self.assertEqual(resultado,"CMXXIII") 
 
     def test_setecientos_cincuenta_y_uno(self):
-        resultado= roman_to_decimal(751)
+        resultado= decimal_to_roman(751)
         self.assertEqual(resultado,"DCCLI") 
 
     def test_ochocientos_tres(self):
-        resultado= roman_to_decimal(803)
+        resultado= decimal_to_roman(803)
         self.assertEqual(resultado,"DCCCIII") 
 
     def test_seicientos_treinta_y_cinco(self):
-        resultado= roman_to_decimal(635)
+        resultado= decimal_to_roman(635)
         self.assertEqual(resultado,"DCXXXV") 
 
     def test_quinientos_sesenta_y_dos(self):
-        resultado= roman_to_decimal(562)
+        resultado= decimal_to_roman(562)
         self.assertEqual(resultado,"DLXII") 
 
     def test_trecientos_sesenta_y_seis(self):
-        resultado= roman_to_decimal(366)
+        resultado= decimal_to_roman(366)
         self.assertEqual(resultado,"CCCLXVI")
 
     def test_ochocientos_setenta_y_siete(self):
-        resultado= roman_to_decimal(877)
+        resultado= decimal_to_roman(877)
         self.assertEqual(resultado,"DCCCLXXVII")    
     
     def test_novecientos_sesenta(self):
-        resultado= roman_to_decimal(960)
+        resultado= decimal_to_roman(960)
         self.assertEqual(resultado,"CMLX")    
     
     def test_novecientos_ochenta_y_siete(self):
-        resultado= roman_to_decimal(987)
+        resultado= decimal_to_roman(987)
         self.assertEqual(resultado,"CMLXXXVII")    
     
     def test_mil(self):
-        resultado= roman_to_decimal(1000)
+        resultado= decimal_to_roman(1000)
         self.assertEqual(resultado,"M")    
 
 if __name__ == '__main__':
