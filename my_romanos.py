@@ -1,4 +1,5 @@
 def decimal2roman(number):
     return "I"
 
-print(decimal2roman(1))
+if __name__ == "__main__":
+    print(decimal2roman(1))
